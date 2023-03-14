@@ -1,0 +1,66 @@
+#efecto {
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 200px;
+    left: 330px;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+/*index.html*/
+main{
+    min-height: 90vh;
+}
+
+.tituloPortada{
+    color: aliceblue;
+    position: absolute;
+    left: 80px;
+}
+
+footer{
+    min-height: 10vh;
+}
+
+footer p{
+    position: absolute;
+    right: 3%;
+}
+
+.iconos{
+    position: absolute;
+    left:3%;
+}
+
+.dropdown-item{
+    color:rgb(255, 255, 255);
+}
+
+#navbar{
+    position: absolute;
+    left: 920px;
+    font-weight: bold;
+}
+
+#boton{
+    color: aliceblue;
+}
+

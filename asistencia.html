@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinisterioDeEducacion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-info-subtle">
+    <!--Navegador-->
+    <nav class="navbar bg-primary navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./Assets/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            </a>
+            <h3 class="tituloPortada">Ministerio de Educación</h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="boton" class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="boton" class="nav-link active" aria-current="page" href="itineranciaSede.html">Itinerancia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="boton" class="nav-link active" aria-current="page" href="asistencia.html">Asistencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="boton" class="nav-link active" aria-current="page" href="registros.html">Registros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="boton" class="nav-link active" aria-current="page" href="sedes.html">Sedes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Carusel-->
+    <div class="text-center text-bg-dark p-3">
+        <h2>Asistencia de Docentes</h2>
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Assets/llamas.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/Purmamarca.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/valle.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/hornacal.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/pucara.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/salinas.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    <!--Main-->
+    <main class="container bg-info-subtle">
+        <p id="efecto">ESCUELA SECUNDARIO RURAL Nº4 E.V.</p>
+        <table class="table table-bordered border-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Semana</th>
+                    <th scope="col">Lunes</th>
+                    <th scope="col">Martes</th>
+                    <th scope="col">Miércoles</th>
+                    <th scope="col">Jueves</th>
+                    <th scope="col">Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">S1: 01 al 03/03/23</th>
+                    <td id="fila1"></td>
+                    <td id="fila2"></td>
+                    <td id="fila3"></td>
+                    <td id="fila4"></td>
+                    <td id="fila5"></td>
+                </tr>
+                <tr>
+                    <th scope="row">S2: 06 al 10/03/23</th>
+                    <td id="fila6"></td>
+                    <td id="fila7"></td>
+                    <td id="fila8"></td>
+                    <td id="fila9"></td>
+                    <td id="fila10">24 de Marzo</td>
+                </tr>
+                <tr>
+                    <th scope="row">S3: 13 al 17/03/23</th>
+                    <td id="fila11"></td>
+                    <td id="fila12"></td>
+                    <td id="fila13"></td>
+                    <td id="fila14"></td>
+                    <td id="fila15"></td>
+                </tr>
+                <tr>
+                    <th scope="row">S4: 20 al 23/03/23</th>
+                    <td id="fila16"></td>
+                    <td id="fila17"></td>
+                    <td id="fila18"></td>
+                    <td id="fila19"></td>
+                    <td id="fila20"></td>
+                </tr>
+                <tr>
+                    <th scope="row">S5: 27 al 31/09/23</th>
+                    <td id="fila21"></td>
+                    <td id="fila22"></td>
+                    <td id="fila23"></td>
+                    <td id="fila24"></td>
+                    <td id="filas25"></td>
+                </tr>    
+            </tbody>
+        </table>
+        <div class="col-md-6 p-3">
+            <button class="btn btn-primary btn btn-block" onclick="generate()">Generar</button>
+        </div>
+    </main>
+    
+    <!--Footer-->
+    <footer class="d-flex justify-content-center align-items-center bg-primary p-3">
+        <div class="iconos" style= "width: 15rem;" >
+            <a href="#" role="button">
+                <img src="./Assets/Whatsapp.png" alt="...">
+            </a>
+            <a href="#" role="button">
+                <img src="./Assets/telefono.png" alt="...">
+            </a>
+            <a href="#" role="button">
+                <img src="./Assets/ubicacion.png" alt="...">
+            </a>
+        </div>
+        <p>Ministerio de Educación 2023 &reg;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
